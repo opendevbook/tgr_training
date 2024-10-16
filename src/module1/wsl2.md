@@ -3,7 +3,8 @@
 ## Enable HyperV
 Open Turn Windows Features on or off
 
-![](../assets/images/window_features.png)
+![](../assets/images/feature_windows.png)
+
 
 Open Power shell with Administor and run command  to Enable HyperV
 
