@@ -42,12 +42,41 @@ wsl --list
 ![](../assets/images/docker_desktop_web3.png)
 
 ![](../assets/images/docker_desktop_web4.png)
-
+Restart: Application if not automatice restart, We can click on icon on desktop
 ![](../assets/images/docker_desktop_web5.png)
 
+![](../assets/images/docker_desktop_web12.png)
+- skip
+
+![](../assets/images/docker_desktop_web13.png)
+
+![](../assets/images/docker_desktop_web14.png)
+
+![](../assets/images/docker_desktop_web15.png)
+
+Check wsl 
+```
+> wsl --list
+```
+![](../assets/images/docker_desktop_web16.png)
+
+- Docker Desktop will connect to default docker-desktop linux in WSL
+
+**Login to docker-desktop ```wsl -d docker-desktop```**
+```
+> wsl -d docker-desktop
+```
+![](../assets/images/docker_desktop_web17.png)
+
+
+![](../assets/images/docker_desktop_web18.png)
+
+- type Exit to exit from linux
+
+# Install  another  Linux
 Install ubuntu 24.04 
 ```
-wsl --install -d Ubuntu-24.04
+> wsl --install -d Ubuntu-24.04
 ```
 ![](../assets/images/docker_desktop_web6.png)
 - username: sysadmin
@@ -112,8 +141,14 @@ Test 2 Docker Command: to verify
 
 ![](../assets/images/docker_desktop_web11.png)
 
+## Ip address of eth0 of every linux wsl same ip address
 
-Benefits of WSL 2
+In Windows Subsystem for Linux (WSL 2), every installed Linux distribution shares the same network interface with the host Windows system. Therefore, **all WSL 2 distributions run on the same virtual network interface and use the same IP address**. This is different from WSL 1, where each distribution had its own IP address.
+
+WSL 2 operates more like a virtual machine in terms of networking. Since all distributions share the same underlying virtualized network interface, they use the host's IP address for external communication.
+
+
+## Benefits of WSL 2
 To recap:
 
 1. Virtual machines are resource intensive and create a very disconnected experience.

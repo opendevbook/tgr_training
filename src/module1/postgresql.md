@@ -33,7 +33,7 @@ docker images
 
 **Docker run**
 ```
-docker run --name postgres-container -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres
+docker run --name postgres-container -e POSTGRES_USER=dbadmin -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres
 ```
 ![](../assets/images/docker_run_postgresql.png)
 
@@ -65,7 +65,7 @@ Show Containers:
 | docker search | search image online |
 | docker pull `<image name>`  | Pull image name postgresql |
 | docker pull postgresql:latest  | Pull image name postgresql |
-| docker run --name postgres-container -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres | Docker Run |
+| docker run --name postgres-container -e POSTGRES_USER=dbadmin -e POSTGRES_PASSWORD=secret -p 5432:5432 -d postgres | Docker Run |
 
 **Download DBeaver Community**
 [https://dbeaver.io/download/](https://dbeaver.io/download/)
@@ -96,4 +96,14 @@ Download windows version and install
 
 ![](../assets/images/dbeaver_web_install10.png)
 
-![](../assets/images/dbeaver_web_install11.png)
+Check ip from Docker engin
+```
+> wsl -d docker-desktop ip a
+```
+![](../assets/images/check_ip_address.png)
+- ip  is 172.20.255.177
+
+![](../assets/images/dbeaver_web_install12.png)
+- Click finish
+
+![](../assets/images/dbeaver_web_install13.png)
